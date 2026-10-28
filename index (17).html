@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#5096d2" name="theme-color"/><title>Ihre Erfahrung ist uns wichtig! – Dr. Pickl &amp; Dr. Roland</title><style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#18363a;background:#f2f8f8}*{box-sizing:border-box}body{margin:0}.wrap{max-width:620px;margin:28px auto;padding:0 16px}.panel{background:white;border:1px solid #dce9e9;border-radius:22px;box-shadow:0 12px 40px #153d4012;overflow:hidden}.head{background:#0e737a;color:white;padding:30px 25px;text-align:center}.head small{letter-spacing:.08em;text-transform:uppercase;opacity:.9}.brand-test{display:inline-flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.85);border-radius:50%;width:78px;height:78px;font-size:16px;font-weight:800;letter-spacing:.1em}.head h1{margin:13px 0 8px;font-size:clamp(25px,6vw,34px)}.head p{margin:0;line-height:1.5}.main{padding:26px}.step{font-size:13px;color:#5c7375;font-weight:700;letter-spacing:.05em}.bar{height:6px;background:#e8f0f0;border-radius:8px;margin:11px 0 25px;overflow:hidden}.bar span{display:block;height:100%;background:#0e737a;transition:width .2s}.question{font-size:21px;line-height:1.35;margin:0 0 19px}.options{display:grid;gap:10px}.choice{display:flex;align-items:center;gap:11px;padding:14px;border:1px solid #d7e4e4;border-radius:12px;cursor:pointer}.choice:has(input:checked){border-color:#0e737a;background:#eaf6f5}.choice input{accent-color:#0e737a;width:18px;height:18px}.actions{display:flex;justify-content:space-between;gap:10px;margin-top:25px}.btn{font:inherit;font-weight:700;border:0;border-radius:12px;padding:14px 18px;cursor:pointer;background:#0e737a;color:white}.btn.secondary{background:#eaf1f1;color:#285258}.btn:disabled{opacity:.4;cursor:not-allowed}.btn.wide{width:100%}textarea{width:100%;min-height:145px;border:1px solid #cbdcdd;border-radius:12px;padding:14px;font:inherit;line-height:1.6;resize:vertical}.hint{font-size:13px;color:#657c7e;line-height:1.5}.footer{text-align:center;font-size:12px;color:#637a7c;padding:0 25px 25px}.hidden{display:none}.success{background:#eaf6f5;padding:12px;border-radius:10px;margin-top:12px;font-size:14px}.link{color:#0e737a;display:inline-block;margin-top:12px}a{word-break:break-word}@media(max-width:480px){.wrap{margin:0;padding:0}.panel{border-radius:0;min-height:100vh}.main{padding:22px}.head{padding:24px 18px}}
+
+/* Identidad visual de la versión azul: segundo anillo #5096d2 */
+:root{color:#294569;background:#fff;--blue:#5096d2;--deep:#105caa;--border:#a8d0f4}
+body{background:#fff;color:#294569}
+.wrap{max-width:850px;margin:0 auto;padding:22px 18px 50px}
+.panel{border:0;border-radius:0;box-shadow:none;overflow:visible;background:#fff}
+.head{background:#fff;color:#294569;text-align:center;padding:10px 10px 18px}
+.logo{display:block;width:145px;height:145px;margin:0 auto 9px}
+.practice{font:400 clamp(24px,4.5vw,37px)/1.2 Arial,Helvetica,sans-serif;color:#255c9b}
+.subtitle{color:#2996d8;letter-spacing:.24em;font:400 11px/1.5 Arial,Helvetica,sans-serif;text-transform:uppercase;margin-top:6px}
+.head h1{color:#105caa;font:800 clamp(37px,7vw,67px)/1.08 Arial,Helvetica,sans-serif;margin:31px 0 19px}
+.head .intro{color:#294569;font:400 clamp(16px,2.5vw,20px)/1.5 Arial,Helvetica,sans-serif;max-width:690px;margin:0 auto}
+.main{max-width:690px;margin:0 auto;padding:24px 14px}
+.step{color:#52789b}.bar{background:#e3f2fd}.bar span{background:#5096d2}
+.question{color:#294569}.choice{border-color:#a8d0f4;background:#fff;color:#294569}
+.choice:has(input:checked){border-color:#5096d2;background:#eaf5fd}
+.choice input{accent-color:#5096d2}.btn{background:#5096d2}.btn.secondary{background:#edf6fd;color:#255c9b}
+textarea{border-color:#a8d0f4;color:#294569}.success{background:#eaf5fd}.link{color:#105caa}
+.footer{color:#64748b}
+@media(max-width:480px){.wrap{margin:0;padding:12px 9px 30px}.panel{min-height:100vh}.head{padding:10px 3px 15px}.logo{width:115px;height:115px}.subtitle{font-size:9px;letter-spacing:.13em}.head h1{margin:24px 0 14px}.main{padding:22px 8px}}
+
+/* Único cambio: presentación de la web dentro de una caja visual. */
+body{background:#f1f6fb}
+.wrap{max-width:850px;margin:24px auto;padding:0 16px 24px}
+.panel{background:#fff;border:1px solid #d7e6f4;border-radius:24px;box-shadow:0 14px 42px rgba(35,87,143,.12);overflow:hidden}
+@media(max-width:480px){.wrap{margin:12px auto;padding:0 10px 16px}.panel{border-radius:18px;min-height:0}}
+</style></head><body><div class="wrap"><div class="panel"><header class="head"><svg aria-label="Augenlogo Dr. Pickl und Dr. Roland" class="logo" role="img" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" fill="#54c1ec" r="100"></circle><circle cx="100" cy="100" fill="#5096d2" r="83"></circle><circle cx="100" cy="100" fill="#000" r="57"></circle><circle cx="126" cy="100" fill="#fff" r="14"></circle></svg><div class="practice">Dr. Pickl &amp; Dr. Roland</div><div class="subtitle">Facharztpraxis für Augenheilkunde</div><h1>Ihre Erfahrung<br/>ist uns wichtig!</h1><p class="intro">Helfen Sie uns, noch besser zu werden.<br/>Beantworten Sie ein paar kurze Fragen und erhalten Sie einen persönlichen Bewertungstext, den Sie – wenn Sie möchten – auf Google teilen können.</p></header><main class="main"><div class="step" id="stepLabel"></div><div class="bar"><span id="progress"></span></div><div id="content"></div><div class="actions" id="actions"></div></main><footer class="footer">Ihre Antworten werden nicht gespeichert oder an unsere Ordination übertragen. Bitte geben Sie keine vertraulichen Gesundheitsdaten an.</footer></div></div><script>
+'use strict';
+const REVIEW_URL='https://search.google.com/local/writereview?placeid=ChIJx0prVtqXc0cR_uDsPzfl5-4';
+
+const questions = [
+  {
+    title: 'Wie zufrieden waren Sie mit unserer Online-Terminbuchung?',
+    options: [
+      ['Sehr zufrieden', [
+        
+        "Die Online-Terminbuchung hat für mich hervorragend funktioniert.",
+        "Einen Termin online zu vereinbaren, war für mich ausgesprochen unkompliziert.",
+        "Meine Erfahrung mit der Online-Terminbuchung war durchweg sehr positiv.",
+        "Die Möglichkeit der Online-Terminbuchung hat mich voll und ganz überzeugt.",
+        "Die Online-Terminbuchung habe ich als besonders angenehm erlebt.",
+        "Die Terminvereinbarung im Internet verlief für mich ausgesprochen gut.",
+        "Online einen Termin zu buchen, empfand ich als sehr angenehm.",
+        "Bei der Buchung über die Website habe ich durchweg sehr gute Erfahrungen gemacht.",
+        "Das Online-Buchungssystem hat bei mir einen ausgezeichneten Eindruck hinterlassen.",
+        "Die Terminbuchung auf digitalem Weg lief für mich wirklich prima.",
+        "Ich fand die Online-Vereinbarung eines Termins rundum gelungen.",
+        "Mit der digitalen Terminvereinbarung lief aus meiner Sicht alles sehr gut.",
+        "Das Buchen eines Termins über das Internet klappte bei mir ausgezeichnet.",
+        "Die Möglichkeit zur Online-Buchung bewerte ich ausgesprochen positiv.",
+        "Für mich war die Terminbuchung online eine sehr gute Erfahrung.",
+        "Der Online-Weg zur Terminvereinbarung hat mich vollkommen überzeugt.",
+        "Bei der digitalen Terminbuchung war mein Eindruck durchweg hervorragend.",
+        "Einen Termin über das Internet zu vereinbaren, hat für mich bestens geklappt.",
+        "Die Online-Buchung empfand ich insgesamt als ausgezeichnet.",
+        "Was die Terminbuchung im Internet betrifft, war meine Erfahrung sehr gut."
+      
+      ]],
+      ['Zufrieden', [
+        
+        "Die Online-Terminbuchung hat für mich gut funktioniert.",
+        "Meine Erfahrung mit der Online-Terminbuchung war positiv.",
+        "Die Möglichkeit, online einen Termin zu buchen, fand ich gut.",
+        "Mit der Online-Terminbuchung bin ich gut zurechtgekommen.",
+        "Die Online-Terminbuchung entsprach meinen Erwartungen.",
+        "Die Terminvereinbarung im Internet verlief bei mir gut.",
+        "Online einen Termin zu buchen, war für mich eine positive Erfahrung.",
+        "Bei der Buchung über die Website hat es für mich gepasst.",
+        "Das Online-Buchungssystem hinterließ bei mir einen guten Eindruck.",
+        "Die Terminbuchung auf digitalem Weg lief aus meiner Sicht ordentlich.",
+        "Ich fand die Online-Vereinbarung eines Termins gelungen.",
+        "Mit der digitalen Terminvereinbarung lief es bei mir gut.",
+        "Das Buchen eines Termins über das Internet klappte bei mir.",
+        "Die Möglichkeit zur Online-Buchung bewerte ich positiv.",
+        "Für mich war die Terminbuchung online eine gute Erfahrung.",
+        "Der Online-Weg zur Terminvereinbarung hat meine Erwartungen erfüllt.",
+        "Bei der digitalen Terminbuchung war mein Eindruck gut.",
+        "Einen Termin über das Internet zu vereinbaren, hat bei mir funktioniert.",
+        "Die Online-Buchung empfand ich als angenehm.",
+        "Was die Terminbuchung im Internet betrifft, war meine Erfahrung gut."
+      
+      ]],
+      ['Weniger zufrieden', [
+        
+        "Die Online-Terminbuchung hat mich nicht ganz überzeugt.",
+        "Meine Erfahrung mit der Online-Terminbuchung war eher durchwachsen.",
+        "Bei der Online-Terminbuchung sehe ich noch Verbesserungsmöglichkeiten.",
+        "Die Online-Terminbuchung entsprach nicht ganz meinen Erwartungen.",
+        "Die Terminbuchung über das Internet fand ich nur teilweise gelungen.",
+        "Die Terminvereinbarung im Internet lief für mich nicht ganz rund.",
+        "Online einen Termin zu buchen, war für mich nur bedingt überzeugend.",
+        "Bei der Buchung über die Website hätte ich mir einen besseren Ablauf gewünscht.",
+        "Das Online-Buchungssystem hinterließ bei mir einen gemischten Eindruck.",
+        "Die Terminbuchung auf digitalem Weg lief für mich nicht ganz wie erhofft.",
+        "Ich fand die Online-Vereinbarung eines Termins nur teilweise gelungen.",
+        "Mit der digitalen Terminvereinbarung war meine Erfahrung eher mäßig.",
+        "Das Buchen eines Termins über das Internet klappte für mich nicht optimal.",
+        "Die Möglichkeit zur Online-Buchung bewerte ich mit Einschränkungen.",
+        "Für mich war die Terminbuchung online eine gemischte Erfahrung.",
+        "Der Online-Weg zur Terminvereinbarung ließ aus meiner Sicht Wünsche offen.",
+        "Bei der digitalen Terminbuchung war mein Eindruck eher verhalten.",
+        "Einen Termin über das Internet zu vereinbaren, hat für mich nicht ganz gepasst.",
+        "Die Online-Buchung empfand ich als verbesserungswürdig.",
+        "Was die Terminbuchung im Internet betrifft, hätte es besser laufen können."
+      
+      ]],
+      ['Unzufrieden', [
+        
+        "Die Online-Terminbuchung hat für mich nicht gut funktioniert.",
+        "Meine Erfahrung mit der Online-Terminbuchung war negativ.",
+        "Die Online-Terminbuchung entsprach meinen Erwartungen nicht.",
+        "Mit der Möglichkeit zur Online-Terminbuchung habe ich schlechte Erfahrungen gemacht.",
+        "Die Online-Terminbuchung hat mich enttäuscht.",
+        "Die Terminvereinbarung im Internet lief für mich schlecht.",
+        "Online einen Termin zu buchen, war für mich eine enttäuschende Erfahrung.",
+        "Bei der Buchung über die Website war mein Eindruck klar negativ.",
+        "Das Online-Buchungssystem hinterließ bei mir einen schlechten Eindruck.",
+        "Die Terminbuchung auf digitalem Weg lief für mich nicht zufriedenstellend.",
+        "Ich fand die Online-Vereinbarung eines Termins misslungen.",
+        "Mit der digitalen Terminvereinbarung habe ich keine guten Erfahrungen gemacht.",
+        "Das Buchen eines Termins über das Internet hat für mich nicht geklappt, wie ich es erwartet hatte.",
+        "Die Möglichkeit zur Online-Buchung bewerte ich negativ.",
+        "Für mich war die Terminbuchung online eine schlechte Erfahrung.",
+        "Der Online-Weg zur Terminvereinbarung ließ für mich deutlich zu wünschen übrig.",
+        "Bei der digitalen Terminbuchung war mein Eindruck enttäuschend.",
+        "Einen Termin über das Internet zu vereinbaren, hat für mich nicht gut geklappt.",
+        "Die Online-Buchung empfand ich als unbefriedigend.",
+        "Was die Terminbuchung im Internet betrifft, war ich klar enttäuscht."
+      
+      ]],
+      ['Ich habe nicht online gebucht', null],
+      ['Möchte ich nicht bewerten', null]
+    ]
+  },
+  {
+    title: 'Wie zufrieden waren Sie mit der Organisation und den Wartezeiten?',
+    options: [
+      ['Sehr zufrieden', [
+        
+        "Die Organisation und die Wartezeiten habe ich als sehr positiv erlebt.",
+        "Bei den Abläufen und Wartezeiten hat für mich alles hervorragend gepasst.",
+        "Die Organisation der Ordination und die Wartezeiten haben mich voll überzeugt.",
+        "Sowohl die Abläufe als auch die Wartezeiten fand ich ausgesprochen gut.",
+        "Meine Erfahrungen mit der Organisation und den Wartezeiten waren durchweg sehr positiv.",
+        "Mit den Abläufen und der Wartezeit hat aus meiner Sicht alles bestens gepasst.",
+        "Die Organisation der Praxis machte auf mich einen ausgezeichneten Eindruck, ebenso die Wartezeiten.",
+        "Sowohl den organisatorischen Ablauf als auch die Wartezeit habe ich als hervorragend empfunden.",
+        "Bei Organisation und Wartezeiten verlief für mich alles ausgesprochen gut.",
+        "Die Abstimmung der Abläufe und die Wartezeiten fand ich rundum gelungen.",
+        "Meine Erfahrung mit den organisatorischen Abläufen und Wartezeiten war ausgezeichnet.",
+        "Die Organisation und die Wartezeit entsprachen meinen Erwartungen in vollem Umfang.",
+        "Was Ablauf und Wartezeiten betrifft, war mein Eindruck durchweg sehr gut.",
+        "Die Abläufe in der Ordination und die Wartezeiten haben mir sehr gut gefallen.",
+        "Organisatorisch und bei den Wartezeiten hat für mich alles bestens funktioniert.",
+        "Die Organisation einschließlich der Wartezeiten hat mich voll und ganz überzeugt.",
+        "Abläufe und Wartezeiten waren aus meiner Sicht ausgesprochen gut.",
+        "Die organisatorische Seite des Besuchs und die Wartezeiten erlebte ich sehr positiv.",
+        "Für Organisation und Wartezeiten kann ich eine ausgesprochen gute Bewertung geben.",
+        "Der gesamte organisatorische Ablauf samt Wartezeiten hat bei mir einen hervorragenden Eindruck hinterlassen."
+      
+      ]],
+      ['Zufrieden', [
+        
+        "Die Organisation und die Wartezeiten waren für mich in Ordnung.",
+        "Die Abläufe und Wartezeiten haben meinen Erwartungen entsprochen.",
+        "Organisation und Wartezeiten habe ich positiv erlebt.",
+        "Bei der Organisation und den Wartezeiten hat es für mich gut gepasst.",
+        "Mit den organisatorischen Abläufen und den Wartezeiten bin ich gut zurechtgekommen.",
+        "Mit den Abläufen und der Wartezeit hat es für mich gepasst.",
+        "Die Organisation der Praxis und die Wartezeiten machten einen guten Eindruck auf mich.",
+        "Sowohl den organisatorischen Ablauf als auch die Wartezeit habe ich positiv empfunden.",
+        "Bei Organisation und Wartezeiten lief es für mich gut.",
+        "Die Abstimmung der Abläufe und die Wartezeiten fand ich in Ordnung.",
+        "Meine Erfahrung mit den organisatorischen Abläufen und Wartezeiten war gut.",
+        "Die Organisation und die Wartezeit entsprachen meinen Erwartungen.",
+        "Was Ablauf und Wartezeiten betrifft, war mein Eindruck positiv.",
+        "Die Abläufe in der Ordination und die Wartezeiten fand ich gut.",
+        "Organisatorisch und bei den Wartezeiten hat es für mich funktioniert.",
+        "Die Organisation einschließlich der Wartezeiten war für mich passend.",
+        "Abläufe und Wartezeiten waren aus meiner Sicht angemessen.",
+        "Die organisatorische Seite des Besuchs und die Wartezeiten erlebte ich positiv.",
+        "Für Organisation und Wartezeiten fällt meine Bewertung gut aus.",
+        "Der organisatorische Ablauf samt Wartezeiten hinterließ bei mir einen guten Eindruck."
+      
+      ]],
+      ['Weniger zufrieden', [
+        
+        "Bei der Organisation und den Wartezeiten sehe ich Verbesserungsbedarf.",
+        "Die Abläufe und Wartezeiten haben mich nicht ganz überzeugt.",
+        "Meine Erfahrungen mit der Organisation und den Wartezeiten waren eher durchwachsen.",
+        "Die Organisation und die Wartezeiten entsprachen nicht ganz meinen Erwartungen.",
+        "In Bezug auf die Abläufe und Wartezeiten hätte ich mir Verbesserungen gewünscht.",
+        "Mit den Abläufen und der Wartezeit hat es für mich nicht ganz gepasst.",
+        "Die Organisation der Praxis und die Wartezeiten hinterließen einen gemischten Eindruck.",
+        "Sowohl beim organisatorischen Ablauf als auch bei den Wartezeiten hätte ich mir Verbesserungen gewünscht.",
+        "Bei Organisation und Wartezeiten lief es für mich nur bedingt gut.",
+        "Die Abstimmung der Abläufe und die Wartezeiten fand ich verbesserungswürdig.",
+        "Meine Erfahrung mit den organisatorischen Abläufen und Wartezeiten war mäßig.",
+        "Die Organisation und die Wartezeit entsprachen nur teilweise meinen Erwartungen.",
+        "Was Ablauf und Wartezeiten betrifft, war mein Eindruck eher verhalten.",
+        "Die Abläufe in der Ordination und die Wartezeiten fand ich nicht optimal.",
+        "Organisatorisch und bei den Wartezeiten lief es für mich nicht ganz rund.",
+        "Die Organisation einschließlich der Wartezeiten ließ aus meiner Sicht Wünsche offen.",
+        "Abläufe und Wartezeiten waren für mich nicht ganz stimmig.",
+        "Die organisatorische Seite des Besuchs und die Wartezeiten erlebte ich eher durchwachsen.",
+        "Für Organisation und Wartezeiten fällt meine Bewertung nur eingeschränkt positiv aus.",
+        "Der organisatorische Ablauf samt Wartezeiten hätte für mich besser sein können."
+      
+      ]],
+      ['Unzufrieden', [
+        
+        "Die Organisation und die Wartezeiten haben mich enttäuscht.",
+        "Meine Erfahrungen mit den Abläufen und Wartezeiten waren negativ.",
+        "Die Organisation und die Wartezeiten entsprachen meinen Erwartungen nicht.",
+        "Mit den organisatorischen Abläufen und den Wartezeiten habe ich schlechte Erfahrungen gemacht.",
+        "Die Organisation und die Wartezeiten fand ich unbefriedigend.",
+        "Mit den Abläufen und der Wartezeit hat es für mich nicht gepasst.",
+        "Die Organisation der Praxis und die Wartezeiten hinterließen einen schlechten Eindruck.",
+        "Sowohl den organisatorischen Ablauf als auch die Wartezeit habe ich negativ empfunden.",
+        "Bei Organisation und Wartezeiten lief es für mich schlecht.",
+        "Die Abstimmung der Abläufe und die Wartezeiten fand ich unbefriedigend.",
+        "Meine Erfahrung mit den organisatorischen Abläufen und Wartezeiten war enttäuschend.",
+        "Die Organisation und die Wartezeit blieben deutlich hinter meinen Erwartungen zurück.",
+        "Was Ablauf und Wartezeiten betrifft, war mein Eindruck negativ.",
+        "Die Abläufe in der Ordination und die Wartezeiten fand ich schlecht.",
+        "Organisatorisch und bei den Wartezeiten lief es für mich nicht gut.",
+        "Die Organisation einschließlich der Wartezeiten hat mich enttäuscht.",
+        "Abläufe und Wartezeiten waren aus meiner Sicht nicht akzeptabel.",
+        "Die organisatorische Seite des Besuchs und die Wartezeiten erlebte ich negativ.",
+        "Für Organisation und Wartezeiten fällt meine Bewertung schlecht aus.",
+        "Der organisatorische Ablauf samt Wartezeiten hinterließ bei mir einen enttäuschenden Eindruck."
+      
+      ]],
+      ['Möchte ich nicht bewerten', null]
+    ]
+  },
+  {
+    title: 'Wie haben Sie unser Ordinationsteam erlebt?',
+    options: [
+      ['Sehr freundlich und hilfsbereit', [
+        
+        "Das Ordinationsteam war ausgesprochen freundlich und hilfsbereit.",
+        "Ich habe das Team als besonders zuvorkommend und hilfsbereit erlebt.",
+        "Die Mitarbeiterinnen und Mitarbeiter waren sehr freundlich und unterstützend.",
+        "Der Umgang mit mir war durchweg herzlich und hilfsbereit.",
+        "Besonders positiv ist mir die große Freundlichkeit und Hilfsbereitschaft des Teams aufgefallen.",
+        "Vom Ordinationsteam wurde ich sehr freundlich und hilfsbereit behandelt.",
+        "Im Umgang mit mir zeigte sich das Team ausgesprochen freundlich und hilfsbereit.",
+        "Die Freundlichkeit und Hilfsbereitschaft der Mitarbeitenden habe ich als besonders positiv erlebt.",
+        "Mein Eindruck vom Ordinationsteam war durchweg sehr freundlich und hilfsbereit.",
+        "Das Team begegnete mir mit großer Freundlichkeit und Hilfsbereitschaft.",
+        "Der Kontakt mit den Mitarbeitenden war ausgesprochen freundlich und unterstützend.",
+        "Das Ordinationsteam habe ich als äußerst zugewandt und hilfsbereit wahrgenommen.",
+        "Bei den Mitarbeiterinnen und Mitarbeitern fiel mir die große Hilfsbereitschaft auf.",
+        "Freundlichkeit und Hilfsbereitschaft des Teams waren für mich hervorragend.",
+        "Der Umgang des Ordinationsteams mit mir war sehr zuvorkommend und hilfsbereit.",
+        "Ich erlebte die Mitarbeitenden als außerordentlich freundlich und hilfsbereit.",
+        "Das Team trat mir gegenüber sehr freundlich und hilfsbereit auf.",
+        "Mein Kontakt mit dem Ordinationsteam war von großer Freundlichkeit geprägt.",
+        "Die Mitarbeitenden waren mir gegenüber ausgesprochen freundlich und hilfsbereit.",
+        "Die Unterstützung und Freundlichkeit des Ordinationsteams habe ich sehr geschätzt."
+      
+      ]],
+      ['Freundlich', [
+        
+        "Das Ordinationsteam war freundlich.",
+        "Ich habe das Team als freundlich erlebt.",
+        "Die Mitarbeiterinnen und Mitarbeiter waren mir gegenüber freundlich.",
+        "Der Umgang mit mir war angenehm und freundlich.",
+        "Die Freundlichkeit des Ordinationsteams ist mir positiv aufgefallen.",
+        "Vom Ordinationsteam wurde ich freundlich behandelt.",
+        "Im Umgang mit mir zeigte sich das Team freundlich.",
+        "Die Freundlichkeit der Mitarbeitenden habe ich positiv erlebt.",
+        "Mein Eindruck vom Ordinationsteam war freundlich.",
+        "Das Team begegnete mir auf freundliche Weise.",
+        "Der Kontakt mit den Mitarbeitenden war freundlich.",
+        "Das Ordinationsteam habe ich als nett erlebt.",
+        "Bei den Mitarbeiterinnen und Mitarbeitern nahm ich einen freundlichen Umgang wahr.",
+        "Die Freundlichkeit des Teams war für mich angenehm.",
+        "Der Umgang des Ordinationsteams mit mir war nett.",
+        "Ich erlebte die Mitarbeitenden als freundlich.",
+        "Das Team trat mir gegenüber freundlich auf.",
+        "Mein Kontakt mit dem Ordinationsteam war von Freundlichkeit geprägt.",
+        "Die Mitarbeitenden waren im Kontakt mit mir freundlich.",
+        "Den freundlichen Umgang des Ordinationsteams habe ich positiv wahrgenommen."
+      
+      ]],
+      ['Weniger freundlich', [
+        
+        "Im Kontakt mit dem Ordinationsteam hätte ich mir mehr Freundlichkeit gewünscht.",
+        "Das Team wirkte auf mich nicht besonders freundlich.",
+        "Der Umgang mit mir war stellenweise weniger freundlich, als ich erwartet hatte.",
+        "Bei der Freundlichkeit des Ordinationsteams sehe ich Verbesserungsbedarf.",
+        "Meine Erfahrungen mit dem Umgangston des Teams waren eher durchwachsen.",
+        "Vom Ordinationsteam hätte ich mir einen freundlicheren Umgang gewünscht.",
+        "Im Umgang mit mir wirkte das Team eher wenig freundlich.",
+        "Die Freundlichkeit der Mitarbeitenden habe ich nur eingeschränkt positiv erlebt.",
+        "Mein Eindruck vom Ordinationsteam war in puncto Freundlichkeit gemischt.",
+        "Das Team begegnete mir nicht so freundlich, wie ich es erwartet hatte.",
+        "Der Kontakt mit den Mitarbeitenden hätte freundlicher sein können.",
+        "Das Ordinationsteam habe ich als eher distanziert erlebt.",
+        "Bei den Mitarbeiterinnen und Mitarbeitern fehlte mir etwas Freundlichkeit.",
+        "Die Freundlichkeit des Teams ließ aus meiner Sicht Wünsche offen.",
+        "Der Umgang des Ordinationsteams mit mir war nicht immer freundlich.",
+        "Ich erlebte die Mitarbeitenden als weniger freundlich als erhofft.",
+        "Das Team trat mir gegenüber eher kühl auf.",
+        "Mein Kontakt mit dem Ordinationsteam war nicht durchgehend freundlich.",
+        "Die Mitarbeitenden wirkten im Kontakt mit mir etwas unfreundlich.",
+        "Den Umgang des Ordinationsteams hätte ich mir freundlicher vorgestellt."
+      
+      ]],
+      ['Unfreundlich', [
+        
+        "Das Ordinationsteam habe ich als unfreundlich erlebt.",
+        "Der Umgang mit mir war aus meiner Sicht unfreundlich.",
+        "Das Verhalten des Ordinationsteams habe ich als wenig respektvoll empfunden.",
+        "Meine Erfahrung mit der Freundlichkeit des Teams war negativ.",
+        "Der Kontakt mit dem Ordinationsteam war für mich unangenehm und unfreundlich.",
+        "Vom Ordinationsteam wurde ich unfreundlich behandelt.",
+        "Im Umgang mit mir zeigte sich das Team unfreundlich.",
+        "Die Mitarbeitenden habe ich als unfreundlich erlebt.",
+        "Mein Eindruck vom Ordinationsteam war klar negativ, was die Freundlichkeit betrifft.",
+        "Das Team begegnete mir auf unfreundliche Weise.",
+        "Der Kontakt mit den Mitarbeitenden war für mich unfreundlich.",
+        "Das Ordinationsteam habe ich als ausgesprochen unfreundlich wahrgenommen.",
+        "Bei den Mitarbeiterinnen und Mitarbeitern vermisste ich Freundlichkeit.",
+        "Die Freundlichkeit des Teams war aus meiner Sicht unzureichend.",
+        "Der Umgang des Ordinationsteams mit mir war unangenehm.",
+        "Ich erlebte die Mitarbeitenden als wenig freundlich.",
+        "Das Team trat mir gegenüber unfreundlich auf.",
+        "Mein Kontakt mit dem Ordinationsteam war von Unfreundlichkeit geprägt.",
+        "Die Mitarbeitenden waren im Kontakt mit mir unfreundlich.",
+        "Den Umgang des Ordinationsteams habe ich negativ erlebt."
+      
+      ]],
+      ['Möchte ich nicht bewerten', null]
+    ]
+  },
+  {
+    title: 'Wie zufrieden waren Sie mit der ärztlichen Betreuung?',
+    options: [
+      ['Sehr zufrieden', [
+        
+        "Die ärztliche Betreuung habe ich als hervorragend erlebt.",
+        "Meine Erfahrung mit der ärztlichen Betreuung war ausgesprochen positiv.",
+        "Die Betreuung durch die Ärztinnen und Ärzte hat mich voll und ganz überzeugt.",
+        "Die ärztliche Betreuung entsprach meinen Erwartungen in jeder Hinsicht.",
+        "Die medizinische Betreuung habe ich als besonders positiv wahrgenommen.",
+        "Die ärztliche Versorgung hat bei mir einen hervorragenden Eindruck hinterlassen.",
+        "Die Betreuung durch die Ärztinnen und Ärzte habe ich als ausgezeichnet erlebt.",
+        "Meine Erfahrungen mit der medizinischen Betreuung waren durchweg sehr gut.",
+        "Was die ärztliche Betreuung betrifft, war mein Eindruck ausgesprochen positiv.",
+        "Die ärztliche Begleitung hat mich rundum überzeugt.",
+        "Die medizinische Betreuung fand ich hervorragend.",
+        "Bei der ärztlichen Versorgung hat für mich alles bestens gepasst.",
+        "Die Betreuung von ärztlicher Seite war für mich ausgezeichnet.",
+        "Ich habe die ärztliche Betreuung als durchweg sehr gut wahrgenommen.",
+        "Mit der medizinischen Versorgung habe ich ausgesprochen gute Erfahrungen gemacht.",
+        "Die ärztliche Betreuung war aus meiner Sicht rundum gelungen.",
+        "Mein Eindruck von der ärztlichen Versorgung war uneingeschränkt positiv.",
+        "Die medizinische Betreuung hat meine Erwartungen voll erfüllt.",
+        "Die Betreuung durch die behandelnden Ärztinnen und Ärzte empfand ich als hervorragend.",
+        "Aus ärztlicher Sicht fühlte ich mich sehr gut betreut."
+      
+      ]],
+      ['Zufrieden', [
+        
+        "Die ärztliche Betreuung habe ich positiv erlebt.",
+        "Die Betreuung durch die Ärztinnen und Ärzte fand ich gut.",
+        "Meine Erfahrung mit der ärztlichen Betreuung war positiv.",
+        "Die ärztliche Betreuung entsprach meinen Erwartungen.",
+        "Mit der ärztlichen Betreuung habe ich gute Erfahrungen gemacht.",
+        "Die ärztliche Versorgung hat bei mir einen guten Eindruck hinterlassen.",
+        "Die Betreuung durch die Ärztinnen und Ärzte habe ich als positiv erlebt.",
+        "Meine Erfahrungen mit der medizinischen Betreuung waren gut.",
+        "Was die ärztliche Betreuung betrifft, war mein Eindruck positiv.",
+        "Die ärztliche Begleitung fand ich gut.",
+        "Die medizinische Betreuung war für mich in Ordnung.",
+        "Bei der ärztlichen Versorgung hat es für mich gepasst.",
+        "Die Betreuung von ärztlicher Seite war für mich gut.",
+        "Ich habe die ärztliche Betreuung als angenehm wahrgenommen.",
+        "Mit der medizinischen Versorgung habe ich gute Erfahrungen gemacht.",
+        "Die ärztliche Betreuung war aus meiner Sicht gelungen.",
+        "Mein Eindruck von der ärztlichen Versorgung war gut.",
+        "Die medizinische Betreuung hat meine Erwartungen erfüllt.",
+        "Die Betreuung durch die behandelnden Ärztinnen und Ärzte empfand ich als positiv.",
+        "Aus ärztlicher Sicht fühlte ich mich gut betreut."
+      
+      ]],
+      ['Weniger zufrieden', [
+        
+        "Die ärztliche Betreuung hat mich nicht ganz überzeugt.",
+        "Bei der ärztlichen Betreuung sehe ich noch Verbesserungsbedarf.",
+        "Meine Erfahrung mit der ärztlichen Betreuung war eher durchwachsen.",
+        "Die ärztliche Betreuung entsprach nicht ganz meinen Erwartungen.",
+        "In Bezug auf die ärztliche Betreuung hätte ich mir Verbesserungen gewünscht.",
+        "Die ärztliche Versorgung hat mich nicht ganz überzeugt.",
+        "Die Betreuung durch die Ärztinnen und Ärzte habe ich als nur teilweise positiv erlebt.",
+        "Meine Erfahrungen mit der medizinischen Betreuung waren eher gemischt.",
+        "Was die ärztliche Betreuung betrifft, war mein Eindruck verhalten.",
+        "Die ärztliche Begleitung hätte für mich besser sein können.",
+        "Die medizinische Betreuung fand ich verbesserungswürdig.",
+        "Bei der ärztlichen Versorgung hat es für mich nicht ganz gepasst.",
+        "Die Betreuung von ärztlicher Seite war für mich nur bedingt überzeugend.",
+        "Ich habe die ärztliche Betreuung als eher durchwachsen wahrgenommen.",
+        "Mit der medizinischen Versorgung habe ich nur mäßig gute Erfahrungen gemacht.",
+        "Die ärztliche Betreuung war aus meiner Sicht nicht optimal.",
+        "Mein Eindruck von der ärztlichen Versorgung war nicht durchweg positiv.",
+        "Die medizinische Betreuung hat meine Erwartungen nur teilweise erfüllt.",
+        "Die Betreuung durch die behandelnden Ärztinnen und Ärzte empfand ich als verbesserungsfähig.",
+        "Aus ärztlicher Sicht fühlte ich mich nicht ganz so gut betreut wie erhofft."
+      
+      ]],
+      ['Unzufrieden', [
+        
+        "Die ärztliche Betreuung hat mich enttäuscht.",
+        "Meine Erfahrung mit der ärztlichen Betreuung war negativ.",
+        "Die ärztliche Betreuung entsprach meinen Erwartungen nicht.",
+        "Mit der ärztlichen Betreuung habe ich schlechte Erfahrungen gemacht.",
+        "Die Betreuung durch die Ärztinnen und Ärzte fand ich unbefriedigend.",
+        "Die ärztliche Versorgung hat mich enttäuscht.",
+        "Die Betreuung durch die Ärztinnen und Ärzte habe ich als negativ erlebt.",
+        "Meine Erfahrungen mit der medizinischen Betreuung waren schlecht.",
+        "Was die ärztliche Betreuung betrifft, war mein Eindruck klar negativ.",
+        "Die ärztliche Begleitung hat mich nicht überzeugt.",
+        "Die medizinische Betreuung fand ich unbefriedigend.",
+        "Bei der ärztlichen Versorgung hat es für mich nicht gepasst.",
+        "Die Betreuung von ärztlicher Seite war für mich enttäuschend.",
+        "Ich habe die ärztliche Betreuung als schlecht wahrgenommen.",
+        "Mit der medizinischen Versorgung habe ich keine guten Erfahrungen gemacht.",
+        "Die ärztliche Betreuung war aus meiner Sicht nicht gelungen.",
+        "Mein Eindruck von der ärztlichen Versorgung war negativ.",
+        "Die medizinische Betreuung hat meine Erwartungen nicht erfüllt.",
+        "Die Betreuung durch die behandelnden Ärztinnen und Ärzte empfand ich als enttäuschend.",
+        "Aus ärztlicher Sicht fühlte ich mich nicht gut betreut."
+      
+      ]],
+      ['Möchte ich nicht bewerten', null]
+    ]
+  }
+];
+let step=0,answers=[null,null,null,null],freeText='',editedText='';
+const content=document.getElementById('content'),actions=document.getElementById('actions');
+function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
+function button(label,callback,secondary=false){const b=el('button','btn'+(secondary?' secondary':''),label);b.type='button';b.onclick=callback;return b}
+// Selección con diversidad de estructura, vocabulario y longitud.
+// Solo escoge variantes de la respuesta indicada; no altera el comentario libre.
+const avoidRepeatedWords=['insgesamt','ausgesprochen','besonders','überzeugt','verbesserungsbedarf'];
+const commonWords=new Set(['die','der','das','den','dem','des','und','mit','mir','ich','habe','hat','war','waren','ist','sind','für','von','bei','als','eine','einen','einer','einem','meine','meinen','meiner','meines','mich','auf','aus','in','im','zu','zur','zum','es','nicht','sehr','eher','auch','durch','oder','über','an','so','dass','was','wie']);
+function wordsOf(sentence){return (sentence.toLocaleLowerCase('de-DE').match(/[a-zäöüß]+/gu)||[])}
+function startOf(sentence){return wordsOf(sentence).slice(0,3).join(' ')}
+function keyWords(sentence){return new Set(wordsOf(sentence).filter(w=>w.length>4&&!commonWords.has(w)))}
+function repeatedWords(sentence){const w=wordsOf(sentence);return avoidRepeatedWords.filter(word=>w.includes(word))}
+function chooseDiverse(variants,selected){
+  const prev=selected[selected.length-1]||'';
+  const usedMarkers=new Set(selected.flatMap(repeatedWords));
+  const usedStarts=new Set(selected.map(startOf));
+  const prevWords=keyWords(prev);
+  const usedKeywords=new Set(selected.flatMap(s=>[...keyWords(s)]));
+  const prevLength=wordsOf(prev).length;
+  const ranked=variants.map(sentence=>{
+    const tokens=wordsOf(sentence), keywords=keyWords(sentence);
+    let penalty=0;
+    if(usedStarts.has(startOf(sentence)))penalty+=9;
+    if(prev&&tokens[0]===wordsOf(prev)[0])penalty+=4;
+    for(const marker of repeatedWords(sentence))if(usedMarkers.has(marker))penalty+=5;
+    for(const word of keywords){if(prevWords.has(word))penalty+=2.2;else if(usedKeywords.has(word))penalty+=0.35}
+    if(prev&&Math.abs(tokens.length-prevLength)<3)penalty+=1;
+    // Ligera aleatoriedad para que no se repita siempre la misma frase.
+    return {sentence,score:penalty+Math.random()*2.5};
+  }).sort((a,b)=>a.score-b.score);
+  const best=ranked[0].score;
+  const shortlist=ranked.filter(x=>x.score<=best+1.5);
+  return shortlist[Math.floor(Math.random()*shortlist.length)].sentence;
+}
+function compose(){
+  const sentences=[];
+  questions.forEach((q,i)=>{
+    if(answers[i]===null)return;
+    const variants=q.options[answers[i]][1];
+    if(!variants)return;
+    sentences.push(chooseDiverse(variants,sentences));
+  });
+  return sentences.join(' ')+(freeText.trim()?(sentences.length?'\n\n':'')+freeText.trim():'');
+}
+function render(){content.replaceChildren();actions.replaceChildren();document.getElementById('stepLabel').textContent=step<4?'FRAGE '+(step+1)+' VON 5':step===4?'FRAGE 5 VON 5':'IHRE BEWERTUNG';document.getElementById('progress').style.width=((step+1)/6*100)+'%';
+if(step<4){let q=questions[step];content.append(el('h2','question',q.title));const group=el('div','options');q.options.forEach(([label],i)=>{const row=el('label','choice'),input=el('input');input.type='radio';input.name='choice';input.value=i;input.checked=answers[step]===i;input.onchange=()=>{answers[step]=i;next.disabled=false};row.append(input,el('span','',label));group.append(row)});content.append(group);const next=button('Weiter →',()=>{step++;render()});next.disabled=answers[step]===null;actions.append(button('← Zurück',()=>{if(step>0){step--;render()}},true),next);if(step===0)actions.firstChild.style.visibility='hidden';}
+else if(step===4){content.append(el('h2','question','Möchten Sie noch etwas ergänzen?'));content.append(el('p','hint','Was hat Ihnen besonders gefallen? Was könnten wir verbessern? (Optional)'));const area=el('textarea');area.placeholder='Ihre persönliche Erfahrung …';area.value=freeText;area.oninput=()=>freeText=area.value;content.append(area);actions.append(button('← Zurück',()=>{step--;render()},true),button('Bewertung erstellen →',()=>{editedText=compose();step=5;render()}));}
+else{content.append(el('h2','question','Ihre Bewertung ist fertig!'));content.append(el('p','hint','Dieser Text wurde aus sprachlichen Varianten Ihrer Angaben erstellt. Sie können ihn vor der Veröffentlichung ändern oder die Veröffentlichung abbrechen.'));const area=el('textarea');area.value=editedText;area.setAttribute('aria-label','Bewertungstext bearbeiten');area.oninput=()=>editedText=area.value;content.append(area);const go=button('Text kopieren & Google öffnen ↗',async()=>{const txt=area.value;try{await navigator.clipboard.writeText(txt);window.location.assign(REVIEW_URL)}catch(e){area.focus();area.select();const note=el('p','success','Automatisches Kopieren war nicht möglich. Bitte kopieren Sie den markierten Text und öffnen Sie Google über den Link unten.');content.append(note);fallback.classList.remove('hidden')}});go.classList.add('wide');content.append(go);const fallback=el('a','link hidden','Google-Bewertung direkt öffnen');fallback.href=REVIEW_URL;fallback.target='_blank';fallback.rel='noopener';content.append(fallback);content.append(el('p','hint','Auf Google wählen Sie selbst die Sterne aus, fügen den kopierten Text ein und entscheiden, ob Sie ihn veröffentlichen.'));actions.append(button('← Antworten bearbeiten',()=>{step=4;render()},true),button('Neu starten',()=>{step=0;answers=[null,null,null,null];freeText='';editedText='';render()},true));}}
+render();
+</script></body></html>
